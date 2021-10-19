@@ -1,0 +1,50 @@
+/*
+white = #F5F5F5
+black = #050709
+red = #d50000
+orange = #FF4500
+yellow = N/A (all accessible colors look more green, not yellow)
+green = #16a085
+blue = #3455db
+purple = #9932CC
+gray = #708090
+*/
+
+/* NAV BAR */
+
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #050709;
+    }
+    
+    li {
+      float: right;
+    }
+    
+    li a {
+      display: block;
+      color: #F5F5F5;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+    
+    .active {
+      background-color: #16a085;
+    }
+</style>
+
+<ul>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#about">About</a></li>
+<li><a class="active" href="#home">Home</a></li>
+</ul>
