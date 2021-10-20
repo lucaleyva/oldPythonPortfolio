@@ -133,6 +133,13 @@ h2 {
 	flex-basis: 40%;
 }
 
+#hero {
+	padding-left: 20%;
+	padding-right: 10%;
+	height: 100%;
+	flex-basis: 40%;
+}
+
 .luca_name {
 	color: #f5f5f5;
 	float: right;
