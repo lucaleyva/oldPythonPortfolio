@@ -18,6 +18,9 @@
       padding: 0;
       overflow: hidden;
       background-color: #050709;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
     }
     
     li {
@@ -39,82 +42,120 @@
     .active {
       background-color: #16a085;
     }
+
+    #home {
+        height: 1000px;
+        background-color: #F5F5F5;
+        color:#050709;
+    }
+
+    #about {
+        height: 1000px;
+        background-color: #F5F5F5;
+        color:#050709;
+    }
+
+    #project {
+        height: 1000px;
+        background-color: #F5F5F5;
+        color:#050709;
+    }
+
+    #contact {
+        height: 1000px;
+        background-color: #F5F5F5;
+        color:#050709;
+    }
 </style>
 
 <body>
-    <nav>
+    <!--NAVIGATION BAR-->
+    <div id="navbar">
         <ul>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
             <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
-    
-<main>  
-    <section>
-        <header>
-          <h1>CORE VALUES</h1>
-       <table>
-              <tr>
-                  HUMILITY 
-              </tr>
-              <tr>
-                  INTEGRITY
-              </tr>
-              <tr>
-                  PERSEVERANCE
-              </tr>
-          </table>
-    </section>
-    <article>
-        <header>
-          <h1>GREETINGS</h1>
-          <p>
-            My name is Luca Leyva&period;<br>
-            I&apos;m a full-stack software developer&comma; agile&sol;leadership coach&comma; and a person passionate about helping make the world a more equitable and kinder place&period;
-          </p>
-          <h1>MY STORY</h1>
-          <p>I enjoy helping people and solving problems&period; This led me to enlist in the military after graduating high school&period; I spent nearly a decade working with some of our nation&apos;s best&period;</p>
-          <p> After leaving the military&comma; a friend of mine asked me if I ever thought about a career in tech&period; I hadn&apos;t as I felt I lacked the skills needed to succeed&period; My friend assured me that what was really needed were the leadership&comma; collaboration&comma; communication&comma; and strategic thinking skills I learned while in the military&period;</p>
-          <p>So&comma; I got a job as a project manager except it was a traditional role&period; I was brought in to help the teamwork in a more collaborative and iterative fashion&comma; and to help them become more efficient as a team&period;</p>
-          <p>This led me to learn about agile&comma; scrum&comma; kanban&comma; systems thinking&comma; lean&comma; data storytelling&comma; etc.</p>
-          <p>What I learned was there was a lot of similarity between agile&sol;lean ways of doing things and what we did in the military&colon; iterative planning and decision making&semi; simple&comma; clear&comma; concise communication&semi; emphasis on teamwork and ownership&semi; and continuous improvement &lpar;e&period;g&period; Retrospectives are called After Action Reviews are standard practice&comma; first introduced in the mid&hyphen;1970s&period;&rpar;</p>
-          <p>After working as a consultant for a few years&comma; I moved to Silicon Valley and joined an EdTech startup&period; I learned a ton there about working with already high&hyphen;performing teams and helping them get to the next level&period;</p>
-          <p>In 2017&comma; I joined Spotify as an agile coach&period; I got to learn and work with some of the best coaches and teams I&apos;ve ever encountered&period; It was a great place to experiment&comma; learn&comma; and grow&period;</p>
-          <p>After 4 years&comma; I came to a crossroads about where to take my career&period; I decided I wanted to be truly involved in creating the product&comma; so I enrolled in a full-stack software developer program&period;</p>
-          <p>Here I have been learning everything from &quot;What is the internet?&quot; to creating a working &quot;Rock&comma; Paper&comma; Scissors&comma; Lizard&comma; Spock&quot; game to creating databases&period;</p>
-          <p>I look forward to completing this program and taking these skills to help teams and organizations achieve their goals&period;</p>
-      </article>
-    
-      <hr>
+    </div>
 
-      <h1>Contact</h1>
-      <form>
-          <p>
-              <label for="first_name">First Name:</label>
-              <input type="text" name="first_name" placeholder="e&period;g&period; Luca" required><br>
-          </p>
-          <p>
-              <label for="last_name">Last Name:</label>
-              <input type="text" name="last_name" placeholder="e&period;g&period; Leyva" required><br>
-          </p>
-          <p>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="e&period;g&period; Luca@Leyva.com" required><br>
-          </p>
-          <p>
-              <label for="title">Title:</label>
-              <input type="text" name="title" placeholder="e&period;g&period; Coaching Services" required  minlength="10" maxlength="50"><br>
-          </p>
-          <p>
-              <label for="message">Message:</label><br>
-              <textarea id="message" name="message" rows="10" cols="40" placeholder="e&period;g&period; Our organization is looking to make an agile transition and we&apos;d like to see if you can help&period;""  required minlength="50" maxlength="1000"></textarea>
-          </p>
-          <button>
-              Submit
-          </button>
-      </form>
-</main>   
+    <!--Home Page-->
+    <div id="home">
+        HOME
+    </div>
+
+    <!--About Page-->
+    <div id="about">
+        <section>
+                <header>
+                  <h1>CORE VALUES</h1>
+               <table>
+                      <tr>
+                          HUMILITY 
+                      </tr>
+                      <tr>
+                          INTEGRITY
+                      </tr>
+                      <tr>
+                          PERSEVERANCE
+                      </tr>
+                  </table>
+            </section>
+            <article>
+                <header>
+                  <h1>GREETINGS</h1>
+                  <p>
+                    My name is Luca Leyva&period;<br>
+                    I&apos;m a full-stack software developer&comma; agile&sol;leadership coach&comma; and a person passionate about helping make the world a more equitable and kinder place&period;
+                  </p>
+                  <h1>MY STORY</h1>
+                  <p>I enjoy helping people and solving problems&period; This led me to enlist in the military after graduating high school&period; I spent nearly a decade working with some of our nation&apos;s best&period;</p>
+                  <p> After leaving the military&comma; a friend of mine asked me if I ever thought about a career in tech&period; I hadn&apos;t as I felt I lacked the skills needed to succeed&period; My friend assured me that what was really needed were the leadership&comma; collaboration&comma; communication&comma; and strategic thinking skills I learned while in the military&period;</p>
+                  <p>So&comma; I got a job as a project manager except it was a traditional role&period; I was brought in to help the teamwork in a more collaborative and iterative fashion&comma; and to help them become more efficient as a team&period;</p>
+                  <p>This led me to learn about agile&comma; scrum&comma; kanban&comma; systems thinking&comma; lean&comma; data storytelling&comma; etc.</p>
+                  <p>What I learned was there was a lot of similarity between agile&sol;lean ways of doing things and what we did in the military&colon; iterative planning and decision making&semi; simple&comma; clear&comma; concise communication&semi; emphasis on teamwork and ownership&semi; and continuous improvement &lpar;e&period;g&period; Retrospectives are called After Action Reviews are standard practice&comma; first introduced in the mid&hyphen;1970s&period;&rpar;</p>
+                  <p>After working as a consultant for a few years&comma; I moved to Silicon Valley and joined an EdTech startup&period; I learned a ton there about working with already high&hyphen;performing teams and helping them get to the next level&period;</p>
+                  <p>In 2017&comma; I joined Spotify as an agile coach&period; I got to learn and work with some of the best coaches and teams I&apos;ve ever encountered&period; It was a great place to experiment&comma; learn&comma; and grow&period;</p>
+                  <p>After 4 years&comma; I came to a crossroads about where to take my career&period; I decided I wanted to be truly involved in creating the product&comma; so I enrolled in a full-stack software developer program&period;</p>
+                  <p>Here I have been learning everything from &quot;What is the internet?&quot; to creating a working &quot;Rock&comma; Paper&comma; Scissors&comma; Lizard&comma; Spock&quot; game to creating databases&period;</p>
+                  <p>I look forward to completing this program and taking these skills to help teams and organizations achieve their goals&period;</p>
+              </article>
+    </div>
+
+    <!--Projects Page-->
+    <div class="active" id="project">
+        Projects...coming soon
+    </div>
+
+    <!--Contact Page-->
+    <div id="contact">
+        <h1>Contact</h1>
+          <form>
+              <p>
+                  <label for="first_name">First Name:</label>
+                  <input type="text" name="first_name" placeholder="e&period;g&period; Luca" required><br>
+              </p>
+              <p>
+                  <label for="last_name">Last Name:</label>
+                  <input type="text" name="last_name" placeholder="e&period;g&period; Leyva" required><br>
+              </p>
+              <p>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="e&period;g&period; Luca@Leyva.com" required><br>
+              </p>
+              <p>
+                  <label for="title">Title:</label>
+                  <input type="text" name="title" placeholder="e&period;g&period; Coaching Services" required  minlength="10" maxlength="50"><br>
+              </p>
+              <p>
+                  <label for="message">Message:</label><br>
+                  <textarea id="message" name="message" rows="10" cols="40" placeholder="e&period;g&period; Our organization is looking to make an agile transition and we&apos;d like to see if you can help&period;""  required minlength="50" maxlength="1000"></textarea>
+              </p>
+              <button>
+                  Submit
+              </button>
+          </form>
+    </div>
+
 </body>
 </html>
