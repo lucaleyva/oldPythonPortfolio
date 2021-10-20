@@ -8,6 +8,7 @@
     blue = #3455db
     purple = #9932CC
     gray = #708090
+    charcoal = #1c2833
 -->
 
 <!DOCTYPE html>
@@ -20,71 +21,80 @@
     <meta name="description" content="A portfolio website for for Luca Leyva - a fullstack developer, and agile and leadership coach."">
     <meta name="keywords" content="Luca leyva, fullstack, developer, software, engineer, agile, coaching, leadership">
     <meta name="author" content="Luca">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">    
 </head>
 
 <body>
     <!--NAVIGATION BAR-->
-    <div id="navbar">
-        <ul>
+    <!-- <div id="navbar"> -->
+        <ul id="navbar">
             <li><a class="active" href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#project">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </div>
+    <!-- </div> -->
 
     <!--Home Page-->
     <div id="home">
-        <header>
-            HOME
+        <header id="banner">
+            <img id="hero" src="images/luca.jpg" alt="Picture of Luca">
+            <div id="luca_name">Luca Leyva</div>
+            <div id="tagline">
+                Full&hyphen;stack Software Developer<br>
+                &amp;<br>
+                Agile&frasl;Leadership Coach
+            </div>
         </header>
-        <aside>
-            <img src="images/dev_setup.jpg" alt="Computer Monitor">
-        </aside>
-    </div>
+        <h2>Learn More</h2>
+        <p>Lorem ipsum&comma; dolor sit amet consectetur adipisicing elit&period;</p>
+        
+        <div class="row">
+          <div class="column">
+            <img id="about_thumb" src="images/hello.jpg" alt="Hello" style="width:100%">
+          </div>
+          <div class="column">
+            <img id="project_thumb" src="images/projects.jpg" alt="Projects" style="width:100%">
+          </div>
+          <div class="column">
+            <img id="contact_thumb" src="images/contact.jpg" alt="Contact" style="width:100%">
+          </div>
+        </div>
 
     <!--About Page-->
     <div id="about">
+        <img src="images/dev_setup.jpg" alt="Computer Monitor">
+        <article>
+            <h1>CORE VALUES</h1>
+                <table>
+                    <tr>HUMILITY</tr>
+                    <tr>INTEGRITY</tr>
+                    <tr>PERSEVERANCE</tr>
+                </table>
+        </article>
         <section>
-                <header>
-                  <h1>CORE VALUES</h1>
-               <table>
-                      <tr>
-                          HUMILITY 
-                      </tr>
-                      <tr>
-                          INTEGRITY
-                      </tr>
-                      <tr>
-                          PERSEVERANCE
-                      </tr>
-                  </table>
-            </section>
-            <article>
-                <header>
-                  <h1>GREETINGS</h1>
-                  <p>
-                    My name is Luca Leyva&period;<br>
-                    I&apos;m a full-stack software developer&comma; agile&sol;leadership coach&comma; and a person passionate about helping make the world a more equitable and kinder place&period;
-                  </p>
-                  <h1>MY STORY</h1>
-                  <p>I enjoy helping people and solving problems&period; This led me to enlist in the military after graduating high school&period; I spent nearly a decade working with some of our nation&apos;s best&period;</p>
-                  <p> After leaving the military&comma; a friend of mine asked me if I ever thought about a career in tech&period; I hadn&apos;t as I felt I lacked the skills needed to succeed&period; My friend assured me that what was really needed were the leadership&comma; collaboration&comma; communication&comma; and strategic thinking skills I learned while in the military&period;</p>
-                  <p>So&comma; I got a job as a project manager except it was a traditional role&period; I was brought in to help the teamwork in a more collaborative and iterative fashion&comma; and to help them become more efficient as a team&period;</p>
-                  <p>This led me to learn about agile&comma; scrum&comma; kanban&comma; systems thinking&comma; lean&comma; data storytelling&comma; etc.</p>
-                  <p>What I learned was there was a lot of similarity between agile&sol;lean ways of doing things and what we did in the military&colon; iterative planning and decision making&semi; simple&comma; clear&comma; concise communication&semi; emphasis on teamwork and ownership&semi; and continuous improvement &lpar;e&period;g&period; Retrospectives are called After Action Reviews are standard practice&comma; first introduced in the mid&hyphen;1970s&period;&rpar;</p>
-                  <p>After working as a consultant for a few years&comma; I moved to Silicon Valley and joined an EdTech startup&period; I learned a ton there about working with already high&hyphen;performing teams and helping them get to the next level&period;</p>
-                  <p>In 2017&comma; I joined Spotify as an agile coach&period; I got to learn and work with some of the best coaches and teams I&apos;ve ever encountered&period; It was a great place to experiment&comma; learn&comma; and grow&period;</p>
-                  <p>After 4 years&comma; I came to a crossroads about where to take my career&period; I decided I wanted to be truly involved in creating the product&comma; so I enrolled in a full-stack software developer program&period;</p>
-                  <p>Here I have been learning everything from &quot;What is the internet?&quot; to creating a working &quot;Rock&comma; Paper&comma; Scissors&comma; Lizard&comma; Spock&quot; game to creating databases&period;</p>
-                  <p>I look forward to completing this program and taking these skills to help teams and organizations achieve their goals&period;</p>
-              </article>
+            <h2>GREETINGS</h2>
+              <p>
+                My name is Luca Leyva&period;<br>
+                I&apos;m a full-stack software developer&comma; agile&sol;leadership coach&comma; and a person passionate about helping make the world a more equitable and kinder place&period;
+              </p>
+              <h2>MY STORY</h2>
+              <p>I enjoy helping people and solving problems&period; This led me to enlist in the military after graduating high school&period; I spent nearly a decade working with some of our nation&apos;s best&period;<br><br>
+              After leaving the military&comma; a friend of mine asked me if I ever thought about a career in tech&period; I hadn&apos;t as I felt I lacked the skills needed to succeed&period; My friend assured me that what was really needed were the leadership&comma; collaboration&comma; communication&comma; and strategic thinking skills I learned while in the military&period;<br><br>
+              So&comma; I got a job as a project manager except it was a traditional role&period; I was brought in to help the teamwork in a more collaborative and iterative fashion&comma; and to help them become more efficient as a team&period;<br><br>
+              This led me to learn about agile&comma; scrum&comma; kanban&comma; systems thinking&comma; lean&comma; data storytelling&comma; etc.<br><br>
+              What I learned was there was a lot of similarity between agile&sol;lean ways of doing things and what we did in the military&colon; iterative planning and decision making&semi; simple&comma; clear&comma; concise communication&semi; emphasis on teamwork and ownership&semi; and continuous improvement &lpar;e&period;g&period; Retrospectives are called After Action Reviews are standard practice&comma; first introduced in the mid&hyphen;1970s&period;&rpar;<br><br>
+              After working as a consultant for a few years&comma; I moved to Silicon Valley and joined an EdTech startup&period; I learned a ton there about working with already high&hyphen;performing teams and helping them get to the next level&period;<br><br>
+              In 2017&comma; I joined Spotify as an agile coach&period; I got to learn and work with some of the best coaches and teams I&apos;ve ever encountered&period; It was a great place to experiment&comma; learn&comma; and grow&period;<br><br>
+              After 4 years&comma; I came to a crossroads about where to take my career&period; I decided I wanted to be truly involved in creating the product&comma; so I enrolled in a full-stack software developer program&period;<br><br>
+              Here I have been learning everything from &quot;What is the internet?&quot; to creating a working &quot;Rock&comma; Paper&comma; Scissors&comma; Lizard&comma; Spock&quot; game to creating databases&period;<br><br>
+              I look forward to completing this program and taking these skills to help teams and organizations achieve their goals&period;
+        </section>
     </div>
 
     <!--Projects Page-->
     <div class="active" id="project">
-        Projects...coming soon
+        <h1>Projects...coming soon</h1>
     </div>
 
     <!--Contact Page-->

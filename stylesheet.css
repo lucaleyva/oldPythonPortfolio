@@ -1,13 +1,38 @@
-#navbar ul {
+/*
+ACCESSIBLE COLORS
+    white = #F5F5F5
+    black = #050709
+    red = #d50000
+    orange = #FF4500
+    yellow = N/A (all accessible colors look more green, not yellow)
+    green = #16a085
+    blue = #3455db
+    purple = #9932CC
+    gray = #708090
+    charcoal = #1c2833
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navbar {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #050709;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
 }
 
 #navbar li {
-	float: right;
+	float: left;
 }
 
 #navbar li a {
@@ -18,44 +43,92 @@
 	text-decoration: none;
 }
 
-#navbar li a:hover:not(.active) {
-	background-color: #111;
+#navbar li a:hover {
+	background-color: #d252b2;
 }
 
-#navbar .active {
+#navbar a.active {
 	background-color: #16a085;
 }
 
-#navbar {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0px;
-}
-#navbar {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0px;
-}
 #home {
 	height: 1000px;
 	background-color: #f5f5f5;
 	color: #050709;
+	padding-top: 5px;
 }
 
 #about {
 	height: 1000px;
 	background-color: #f5f5f5;
 	color: #050709;
+	padding-top: 47px;
 }
 
 #project {
 	height: 1000px;
 	background-color: #f5f5f5;
 	color: #050709;
+	padding-top: 47px;
 }
 
 #contact {
 	height: 1000px;
 	background-color: #f5f5f5;
 	color: #050709;
+	padding-top: 47px;
+}
+
+button:hover {
+	color: #16a085;
+	background-color: #050709;
+}
+
+h1 {
+	font-weight: 400;
+	letter-spacing: 15px;
+	font-size: 30px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1,
+h2 {
+	color: #708090;
+}
+#about img {
+	height: 100%;
+	width: 35%;
+	float: right;
+}
+
+#banner {
+	height: 33%;
+	background-color: #000;
+}
+
+#hero {
+	padding-left: 20%;
+	padding-right: 10%;
+	height: 100%;
+}
+
+#luca_name {
+	color: #f5f5f5;
+	float: right;
+	padding-right: 15%;
+	padding-top: 2%;
+	font-size: 70px;
+	letter-spacing: 5px;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
 }
