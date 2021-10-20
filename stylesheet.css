@@ -1,0 +1,61 @@
+#navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #050709;
+}
+
+#navbar li {
+	float: right;
+}
+
+#navbar li a {
+	display: block;
+	color: #f5f5f5;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#navbar li a:hover:not(.active) {
+	background-color: #111;
+}
+
+#navbar .active {
+	background-color: #16a085;
+}
+
+#navbar {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+}
+#navbar {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+}
+#home {
+	height: 1000px;
+	background-color: #f5f5f5;
+	color: #050709;
+}
+
+#about {
+	height: 1000px;
+	background-color: #f5f5f5;
+	color: #050709;
+}
+
+#project {
+	height: 1000px;
+	background-color: #f5f5f5;
+	color: #050709;
+}
+
+#contact {
+	height: 1000px;
+	background-color: #f5f5f5;
+	color: #050709;
+}
